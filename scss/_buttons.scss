@@ -1,0 +1,40 @@
+.btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.btn-flat {
+  @extend .btn;
+  color: $gray;
+  font-size: 1.5rem;
+  padding: 1rem;
+
+  &:hover, &:focus {
+    color: $black;
+    cursor: pointer;
+  }
+}
+
+.btn-primary {
+  @extend .btn;
+  color: $gray;
+  font-size: 1.5rem;
+  border: 1px solid $gray;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+
+  &--dark {
+    color: $white;
+    background-color: $black;
+    font-size: 1.6rem;
+    padding: 1.5rem 2rem;
+  }
+
+  &:hover, &:focus {
+    color: $black;
+    border-color: $black;
+    background-color: $white;
+    cursor: pointer;
+  }
+}
